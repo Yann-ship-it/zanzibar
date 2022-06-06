@@ -1,8 +1,8 @@
 :root {
-    --blue: rgb(9, 249, 249);
-    --little-blue: rgb(58, 61, 212);
-    --big-blue: rgb(94, 96, 186);
-    --button-blue: rgb(67, 130, 219);
+    --blue: rgb(53, 84, 187);
+    --little-blue: rgb(98, 100, 231);
+    --big-blue: rgb(98, 100, 182);
+    --button-blue: rgb(80, 123, 184);
     --red: rgb(211, 34, 34);
   }
 
@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 /* NAV / Header */
@@ -69,7 +70,7 @@ div img {
 #title {
     display: flex;
     flex-direction: column;
-    padding: 250px 0 0 250px;
+    padding: 200px 0 0 30px;
 }
 
 #title h2 {
@@ -86,6 +87,7 @@ div img {
 
 #title p {
     color: #fff;
+    padding: 10px 0 10px 0;
 }
 
 #title button {
@@ -132,15 +134,15 @@ div img {
 #sect1 {
     display: flex;
     flex-direction: column;
-
 }
+
+
 
 #sect1 h2.title {
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
     margin: 0 auto;
-    padding-top: 30px;
     font-size: 40px;
 }
 
@@ -535,6 +537,10 @@ article.sect6 {
 
 article.fin p {
     display: flex;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 80%;
 }
 
 #sect6 .fin {
@@ -545,7 +551,7 @@ article.fin p {
 
 .col {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-right: 100px;
 }
 
@@ -555,9 +561,6 @@ article.fin p {
     flex-direction: column;
 }
 
-#msg {
-    width: 100%;
-}
 
 .underb {
     display: flex;
@@ -587,6 +590,11 @@ footer {
 /*----------------------------- Media QUERIES -----------------------------*/
 
 @media (max-width: 768px) {
+
+    h2 {
+        text-align: center;
+    }
+
     ul {
         flex-direction: column;
     }
@@ -606,6 +614,29 @@ footer {
     div.container {
         display: flex;
         flex-direction: column;
+    }
+    
+    #sect1 .zzz {
+        width: 70%;
+    }
+
+    #sect2 .voyage {
+        width: 70%;
+    }
+
+    #sect2 img {
+        width: 70%;
+    }
+
+    #sect5 .day {
+        width: 300px;
+    }
+
+    #sect6 .fin {
+        width: 70%;
+    }
+    h1 {
+        font-size: 10px;
     }
 }
 
@@ -636,12 +667,20 @@ footer {
     }
 
     #sect6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
         flex-wrap: wrap;
     }
 
     iframe {
         width: 400px;
         padding-top: 10px;
+    }
+
+    #sect6 .fin h2 {
+        font-size: 30px;
     }
 
 }
